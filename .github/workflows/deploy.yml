@@ -13,7 +13,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     env:
-      SITE_REPO: ourailabs/.github.git
+      SITE_REPO: ourailabs/.github
       SITE_BRANCH: gh-pages
     steps:
       - name: Create temp dirs
