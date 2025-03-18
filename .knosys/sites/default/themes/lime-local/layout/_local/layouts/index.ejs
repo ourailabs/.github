@@ -1,0 +1,27 @@
+<%- partial(theme.header && theme.header.partial || '_ksio/partials/header') %>
+<% const utm_flag = '?utm_source=labs.ourai.ws&utm_medium=homepage' %>
+<main class="Page-content">
+  <%- partial('_ksio/slots/banner') %>
+  <div class="container">
+    <article class="Page-main Article">
+      <header class="Article-header">
+        <h1 class="Article-title"><%= config.title %></h1>
+      </header>
+      <div class="Article-content">
+        <p>「OurAI Labs」是诞生于个人社区「<a href="https://c.ourai.ws/">欧雷宇宙</a>」的数智产品解决方案共建团队，旨在基于「知识驱动」理念打造对人类、AI agents 都友好的应用软件研发、数智生活相关基础设施。</p>
+        <section>
+          <h2>团队业务</h2>
+          <p>目前有两条「业务线」——</p>
+          <div class="Grid Grid--twoCols is-active">
+            <% site.data['local/bizs'].forEach(item => { %>
+              <div class="Grid-item">
+                <%- partial('_local/components/card', { title: item.title, description: item.description, banner: url_for(`images/local/banners/${item.cover}`), url: item.url.startsWith('http') ? `${item.url}${utm_flag}` : item.url }) %>
+              </div>
+            <% }) %>
+          </div>
+        </section>
+      </div>
+    </article>
+  </div>
+</main>
+<%- partial(theme.footer && theme.footer.partial || '_ksio/partials/footer') %>

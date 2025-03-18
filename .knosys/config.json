@@ -1,0 +1,14 @@
+{
+  "command": "./.knosys/scripts/command",
+  "site": {
+    "default": {
+      "alias": "ourailabs-website",
+      "cname": "labs.ourai.ws",
+      "generator": "hexo",
+      "git": {
+        "url": "https://github.com/ourailabs/.github.git",
+        "branch": "gh-pages"
+      }
+    }
+  }
+}
