@@ -6,7 +6,10 @@ ksio_seo_title: 什么是「OurAI Labs」？
 
 「OurAI Labs」是诞生于个人社区「[欧雷宇宙](https://c.ourai.ws/)」的数智产品解决方案共建团队，旨在基于「知识驱动」理念打造对人类、AI agents 都友好的应用软件研发、数智生活相关基础设施。
 
-![Ourai & OurAI Labs](./about/ourailabs.jpg)
+<figure>
+  <img src="/about/ourailabs.jpg" alt="Ourai & OurAI Labs">
+  <figcaption>Ourai & OurAI Labs</figcaption>
+</figure>
 
 顾名思义——
 
@@ -22,7 +25,7 @@ ksio_seo_title: 什么是「OurAI Labs」？
 构建交付成果的核心思想与原则：
 
 - 唯一可信来源（SSOT）；
-- 基于标准/协议/规范/约定；
+- 基于共识（标准/协议/规范/约定）；
 - 语义化；
 - 去中心化；
 - 本地优先（local-first）。
